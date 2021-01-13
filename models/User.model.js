@@ -11,7 +11,7 @@ const userSchema = new Schema({
 
     instrument: {
         type: String,
-        enum: ['Guitarra eléctrica', 'Guitarra española', 'Batería', 'Bajo', 'Piano', 'Voz', 'Trompeta', 'Acordeón', 'Saxofón', 'Trombón', 'Tuba', 'Gaita', 'Violín', 'Clarinete', 'Violonchelo', 'Contrabajo', 'Fagot', 'Ukelele']    
+        enum: ['Guitarra eléctrica', 'Guitarra española', 'Batería', 'Cajón flamenco', 'Bajo', 'Piano', 'Voz', 'Trompeta', 'Acordeón', 'Saxofón', 'Trombón', 'Tuba', 'Gaita', 'Violín', 'Clarinete', 'Flauta travesera', 'Violonchelo', 'Contrabajo', 'Fagot', 'Ukelele', 'Otros']    
     },
 
     age: {
