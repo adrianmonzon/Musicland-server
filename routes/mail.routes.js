@@ -10,9 +10,11 @@ router.post('/send-email', (req, res) => {
 
     const { contactEmail, subject, message } = req.body
 
+    console.log(req.body)
+
     transporter
         .sendMail({
-            from: '"Musicland " <musiclandironhack@gmail.com>',
+            from: "'Encuentra un Músico' <contacto@encuentraunmusico.com>",
             to: contactEmail,
             subject,
             text: message,
