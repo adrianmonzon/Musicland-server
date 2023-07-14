@@ -14,7 +14,7 @@ router.post('/send-email', (req, res) => {
 
     transporter
         .sendMail({
-            from: "Encuentra un Músico",
+            from: process.env.EMAILUSER,
             to: contactEmail,
             subject,
             text: message,
