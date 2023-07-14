@@ -14,7 +14,7 @@ router.post('/send-email', (req, res) => {
 
     transporter
         .sendMail({
-            from: process.env.EMAIL_ACCOUNT,
+            from: "info@encuentraunmusico.com",
             to: contactEmail,
             subject,
             text: message,
