@@ -13,15 +13,15 @@ router.post('/send-email', (req, res) => {
     console.log(req.body)
 
     transporter
-      .sendMail({
-        from: "info@encuentraunmusico.com",
-        to: contactEmail,
-        subject,
-        text: message,
-        html: `<b>${message}</b>`,
-      })
-      .then((info) => res.json(info))
-      .catch((error) => console.log(error));
+        .sendMail({
+            from: `'Encuentra un Músico' <${process.env.EMAIL_ACCOUNT}>`,
+            to: contactEmail,
+            subject,
+            text: message,
+            html: `<b>${message}</b>`
+        })
+        .then(info => res.json(info))
+        .catch(error => console.log(error))
 })
 
 
